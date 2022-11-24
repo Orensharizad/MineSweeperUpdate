@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body oncontextmenu="return false" onload="onInit()">
+    <div class="container">
+        <button class="level btn" onclick="levelCheck(4,2)">Easy</button>
+        <button class="level btn" onclick="levelCheck(8,14)">Hard</button>
+        <button class="level btn" onclick="levelCheck(12,32)">Extream</button>
+    </div>
+    <button class="emoji reset-game" onclick="resetGame()">😀</button>
+    <div class="timer">
+        <label class="minutes">00</label>:<label class="seconds">00</label>
+    </div>
+    <div class="lives-counter">
+        <h2>Lives Left : <span>2</span></h2>
+    </div>
+    <table>
+        <tbody class="board">
+
+
+        </tbody>
+
+
+    </table>
+
+
+
+
+
+    <script src="utils.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
